@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Kalkulator</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="kalkulator">
+            <div id="board"></div>
+            <div class="buttons">
+                <button type="button" id="clear" class="button">C</button>
+                <button type="button" onclick="number(this.id)" class="button" id="0">0</button>
+                <button type="button" onclick="mathOperation(this.id)" class="button" id="divide">&#247;</button>
+                <button type="button" onclick="mathOperation(this.id)" class="button" id="multiply">&#215;</button>
+                <button type="button" onclick="number(this.id)" class="button" id="7">7</button>
+                <button type="button" onclick="number(this.id)" class="button" id="8">8</button>
+                <button type="button" onclick="number(this.id)" class="button" id="9">9</button>
+                <button type="button" onclick="mathOperation(this.id)" class="button" id="substract">-</button>
+                <button type="button" onclick="number(this.id)" class="button" id="4">4</button>
+                <button type="button" onclick="number(this.id)" class="button" id="5">5</button>
+                <button type="button" onclick="number(this.id)" class="button" id="6">6</button>
+                <button type="button" onclick="mathOperation(this.id)" class="button" id="add">+</button>
+                <button type="button" onclick="number(this.id)" class="button" id="1">1</button>
+                <button type="button" onclick="number(this.id)" class="button" id="2">2</button>
+                <button type="button" onclick="number(this.id)" class="button" id="3">3</button>
+                <button type="button" onclick="result()" class="button">=</button>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
