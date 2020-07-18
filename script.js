@@ -16,13 +16,14 @@ number = id => {
     if (accumulator > 0) {
         accumulator = accumulator * 10 + number;
     } else {
-        accumulator = id;
+        accumulator = number;
     }
     board.innerHTML = accumulator;
 };
 
 mathOperation = id => {
     numbersAndMathOperations.push(accumulator, id.toString());
+    console.log(numbersAndMathOperations);
     accumulator = 0;
     document.getElementById('board').innerHTML = '';
 };
@@ -32,6 +33,7 @@ result = () => {
         alert('You are doing something wrong!');
     } else {
         numbersAndMathOperations.push(accumulator);
+        console.log(numbersAndMathOperations);
         while (numbersAndMathOperations.length != 1) {
             if (numbersAndMathOperations.includes('multiply' || 'divide')) {
                 numbersAndMathOperations.forEach((element, index) => {
